@@ -1,0 +1,27 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/video-camera/video-camera.html">
+<link rel="import" href="shared-styles.html">
+
+
+<dom-module id="my-camera">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+    </style>
+    <div class="card">
+    <h1 align="center">Click on the screen to take a picture</h1>
+      <video-camera screenshot="{{screen}}" onClick=""></video-camera>
+
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'my-camera'
+    });
+  </script>
+</dom-module>
